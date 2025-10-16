@@ -9,4 +9,13 @@ export const API = {
       console.error(err);
     }
   },
+  getProducts: async () => {
+    try {
+      const resp = await fetch(`${BASE_URL}/products`);
+      const data = await resp.json();
+      return data;
+    } catch (err) {
+      console.error(err);
+    }
+  },
 };

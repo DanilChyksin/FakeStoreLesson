@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="container">
       <div className="flex w-full h-full items-center justify-center">
-        <div className="h-[600px] w-full">
+        <div className="h-[600px] flex gap-5 w-full">
           <SideBar />
-          <div className="w-[80%]">
+          <div className="w-[80%] h-full bg-black rounded-2xl max-h-[4000px] overflow-y-scroll">
             <AppRoutes />
           </div>
         </div>
